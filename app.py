@@ -37,7 +37,7 @@ def get_subtract():
     return jsonify({'result': action(request.json, 'sub')})
 
 
-@app.route('/calc/multiplication', methods=['POST'])
+@app.route('/calc/multiply', methods=['POST'])
 def get_multiply():
     return jsonify({'result': action(request.json, 'mul')})
 
