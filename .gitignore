@@ -1,0 +1,3 @@
+api_venv/
+.pytest_cache
+.idea/
