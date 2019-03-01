@@ -4,7 +4,10 @@ from flask import abort
 def action(obj, calc):
     if not obj:
         abort(404)
-    arg1, arg2 = obj['x'], obj['y']
+    try:
+        arg1, arg2 = obj['x'], obj['y']
+    except:
+        abort(401)
     if "sum" in calc:
         res = int(arg1)+int(arg2)
     elif "sub" in calc:
