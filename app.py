@@ -10,6 +10,12 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
+@app.errorhandler(400)
+def not_found(error):
+    err = 'One or more argument is bad'
+    return make_response(jsonify({'error': err}), 400)
+
+
 @app.route('/get', methods=['GET'])
 def get_example():
     return jsonify({'tasks': t.tasks})
