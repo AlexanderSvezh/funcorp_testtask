@@ -3,3 +3,4 @@ api_venv/
 .idea/
 .pyc
 __pycache__/
+files/__pycache__

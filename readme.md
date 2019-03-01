@@ -1,6 +1,6 @@
-How to use:
-1. Run Flask server (app.py)
-2. Get curl request:
+# How to use:
+1. Run Flask server (app.py), default - 127.0.0.1:5000
+2. Send curl request:
 
 Example (subtraction):
 ```

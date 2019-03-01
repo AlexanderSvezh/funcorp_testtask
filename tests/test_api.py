@@ -1,6 +1,9 @@
 import requests
 import pytest
 
+
+# example test for random open api
+
 api_url = 'https://jsonplaceholder.typicode.com'
 api_url_new = 'https://reqres.in/api'
 
